@@ -2,6 +2,7 @@
 #include <cstring>
 
 #include <cxxopts.hpp>
+#include <iostream>
 
 #if defined(PLATFORM_WEB)
 #include <emscripten/emscripten.h>
@@ -39,6 +40,11 @@ int main(int argc, char* argv[])
         ;
 
     auto result = options.parse(argc, argv);
+    if (result.count("help"))
+    {
+        std::cout << options.help({"", "Group"}) << std::endl;
+        return 0;
+    }
 
 
     if (msaa)

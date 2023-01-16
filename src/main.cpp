@@ -29,12 +29,12 @@ int main(int argc, char* argv[])
 {
     cxxopts::Options options(gameName, gameDescription);
     options.add_options()
-        ("f,fullscreen", "Fullscreen", cxxopts::value<bool>(fullscreen)->default_value("false"))
-        ("b,borderless", "Borderless", cxxopts::value<bool>(borderless)->default_value("false"))
-        ("width", "Width", cxxopts::value<int>(screenWidth))//->default_value("1280"))
-        ("height", "Height", cxxopts::value<int>(screenHeight))//->default_value("720"))
-        ("m,msaa", "MSAA", cxxopts::value<bool>(msaa)->default_value("true"))
-        ("v,vsync", "VSync", cxxopts::value<bool>(vSync)->default_value("true"))
+        ("f,fullscreen", "Fullscreen", cxxopts::value<bool>(fullscreen))
+        ("b,borderless", "Borderless", cxxopts::value<bool>(borderless))
+        ("width", "Width", cxxopts::value<int>(screenWidth))
+        ("height", "Height", cxxopts::value<int>(screenHeight))
+        ("m,msaa", "MSAA", cxxopts::value<bool>(msaa))
+        ("v,vsync", "VSync", cxxopts::value<bool>(vSync))
         ("h,help", "Print usage")
         ;
 

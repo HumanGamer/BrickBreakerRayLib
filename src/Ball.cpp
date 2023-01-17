@@ -52,7 +52,9 @@ void Ball::Render()
 {
     Vector2 ballPos = GetRenderPos();
     Vector2 ballSize = GetRenderSize();
-    DrawEllipse(ballPos.x, ballPos.y, ballSize.x, ballSize.y, WHITE);
+
+    DrawEllipse(ballPos.x, ballPos.y, ballSize.x, ballSize.y, RED);
+    DrawEllipse(ballPos.x, ballPos.y, ballSize.x - 5, ballSize.y - 5, WHITE);
 }
 
 void Ball::SetPosition(Vector2 pos)

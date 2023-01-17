@@ -36,6 +36,7 @@ void Game::Init()
     }
 
     //DisableCursor();
+    HideCursor();
 }
 
 void Game::Update(double deltaTime)

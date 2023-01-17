@@ -33,12 +33,14 @@ set(MAIN_SRC
     GameObject.cpp
     Paddle.cpp
     Ball.cpp
+    RenderUtil.cpp
 
     # Headers
     Game.hpp
     GameObject.hpp
     Paddle.hpp
     Ball.hpp
+    RenderUtil.hpp
 )
 
 add_executable(${PROJECT_NAME} ${MAIN_SRC})

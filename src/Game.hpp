@@ -4,6 +4,7 @@
 #include <vector>
 
 class GameObject;
+class Paddle;
 
 class Game
 {
@@ -21,8 +22,12 @@ public:
     Vector2& GetSize() { return mSize; }
     Vector2& GetGameSize() { return mGameSize; }
 
+    void RemoveObject(GameObject* obj);
+
 private:
     std::vector<GameObject*> mGameObjects;
+
+    Paddle* mPaddle;
 
     Vector2 mSize;
     Vector2 mGameSize;

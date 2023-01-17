@@ -4,6 +4,8 @@ GameObject::GameObject()
 {
     this->mPosition = {0, 0};
     this->mSize = {0, 0};
+
+    this->mRemove = false;
 }
 
 GameObject::~GameObject()

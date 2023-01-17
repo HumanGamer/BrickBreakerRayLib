@@ -17,7 +17,13 @@ public:
     Vector2 GetRenderSize();
 
     void SetGameObject(Game* game) { mGame = game; }
+
+    Rectangle GetRectangle() { return {mPosition.x, mPosition.y, mSize.x, mSize.y}; }
+
+    bool ShouldRemove() { return mRemove; }
 protected:
+    bool mRemove;
+
     Game* mGame;
     Vector2 mPosition;
     Vector2 mSize;

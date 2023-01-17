@@ -30,9 +30,15 @@ set(MAIN_SRC
     # Sources
     main.cpp
     Game.cpp
+    GameObject.cpp
+    Paddle.cpp
+    Ball.cpp
 
     # Headers
     Game.hpp
+    GameObject.hpp
+    Paddle.hpp
+    Ball.hpp
 )
 
 add_executable(${PROJECT_NAME} ${MAIN_SRC})

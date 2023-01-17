@@ -10,8 +10,8 @@
 
 #include "Game.hpp"
 
-const char* gameName = "Test Game";
-const char* gameDescription = "A test game";
+const char* gameName = "Brick Breaker";
+const char* gameDescription = "A game about breaking bricks.";
 int screenWidth = 1280;
 int screenHeight = 720;
 bool fullscreen = false;
@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 
     SetExitKey(KEY_ESCAPE);
 
-    game = new Game();
+    game = new Game(screenWidth, screenHeight);
     game->Init();
 
     // Main game loop
